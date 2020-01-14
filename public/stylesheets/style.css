@@ -1,8 +1,12 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 a {
   color: #00B7FF;
 }
+
