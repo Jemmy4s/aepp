@@ -1,32 +1,32 @@
 <main role="main">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
+        <div class="carousel-inner" style="height: 500px">
+            <div class="carousel-item active" style="height: 100%">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <h1>{{key.presentation.title}}</h1>
                         <p>{{key.presentation.text}}</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">{{key.history}}</a></p>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div class="carousel-item" style="height: 100%">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <h1>{{key.presentationLogement.title}}</h1>
+                        <p>{{key.presentationLogement.text}}</p>
                         <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" style="height: 100%">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
                 <div class="container">
                     <div class="carousel-caption text-right">
@@ -60,20 +60,32 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">{{key.presentation.title}} <span class="text-muted">It’ll blow your mind.</span></h2>
+                <h2 class="featurette-heading">
+                    {{key.presentation.title}}
+                    <span class="text-muted">{{key.presentation.soustitre}}</span>
+                </h2>
                 <p class="lead">{{key.presentation.text}}</p>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+<!--                <svg height="200" width="200" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>            </div>-->
+                <svg height="250px" width="250 px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="feather-alt" class="svg-inline--fa fa-feather-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 0C460.22 3.56 96.44 38.2 71.01 287.61c-3.09 26.66-4.84 53.44-5.99 80.24l178.87-178.69c6.25-6.25 16.4-6.25 22.65 0s6.25 16.38 0 22.63L7.04 471.03c-9.38 9.37-9.38 24.57 0 33.94 9.38 9.37 24.59 9.37 33.98 0l57.13-57.07c42.09-.14 84.15-2.53 125.96-7.36 53.48-5.44 97.02-26.47 132.58-56.54H255.74l146.79-48.88c11.25-14.89 21.37-30.71 30.45-47.12h-81.14l106.54-53.21C500.29 132.86 510.19 26.26 512 0z"></path></svg>
             </div>
         </div>
+    <hr class="featurette-divider">
 
-        <hr class="featurette-divider">
 
+    <div class="parallax" style="background-image: url('../images/facade.webp')">
+    </div>
+
+
+
+        <hr class="featurette-divider" >
+<p>toto</p>
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading"><h1>{{key.presentationLogement.title}}</h1>
+                    <span class="text-muted">See for yourself.</span></h2>
+                <p class="lead">{{key.presentationLogement.text}}</p>
             </div>
             <div class="col-md-5 order-md-1">
                 <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
@@ -81,7 +93,10 @@
         </div>
 
         <hr class="featurette-divider">
-
+    <div class="parallax">
+        <h1>Test</h1>
+    </div>
+    <hr class="featurette-divider">
         <div class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
@@ -91,10 +106,7 @@
                 <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
             </div>
         </div>
-
         <hr class="featurette-divider">
-
-
     </div>
 
 <div class="container marketing">

@@ -10,3 +10,21 @@ a {
   color: #00B7FF;
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/v/t31.0-8/26850003_1705475566141126_6423342433097491969_o.jpg?_nc_cat=107&_nc_ohc=70EqkgC-aAkAX8_iJKO&_nc_ht=scontent-cdg2-1.xx&oh=94ea69d46826c670b89e21cb54eaa7ef&oe=5E9ACA51");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+flag {
+  padding: 10px;
+  margin: 10px;
+}
