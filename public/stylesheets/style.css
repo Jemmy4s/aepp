@@ -24,7 +24,7 @@ a {
   background-size: cover;
 }
 
-flag {
-  padding: 10px;
-  margin: 10px;
+.flag {
+  padding: 1%;
+  margin: 1%;
 }
